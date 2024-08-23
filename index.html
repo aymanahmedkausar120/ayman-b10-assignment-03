@@ -19,11 +19,84 @@
 			font-family: "Manrope", sans-serif;
 		}
 	</style>
+	<!-- customizing config -->
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						clifford: '#da373d',
+						'btn-lime': '#ABEF5F',
+
+					}
+				}
+			}
+		}
+	</script>
 </head>
 
 <body class="manrope">
-	<header></header>
-	<main></main>
+	<header class="opacity-80 bg-gradient-to-b from-[#ece4e4] to-[#fff]">
+		<!-- navbar -->
+		<nav>
+			<div class="navbar container mx-auto flex justify-between items-center">
+				<div>
+					<ul class="flex items-center">
+						<li>
+							<a><i
+									class="fa-solid fa-arrow-right bg-btn-lime lg:text-sm px-2 p-2 mr-2 lg:py-1 items-center font-semibold text-black rounded-full -rotate-45"></i></a>
+						</li>
+						<li>
+							<a class="text-3xl text-black font-extrabold cursor-pointer">
+								Rinterio</a>
+						</li>
+					</ul>
+				</div>
+				<div class="hidden lg:flex cursor-pointer">
+					<ul class="flex space-x-4 text-[#737373]">
+						<li class="font-extrabold text-black"><a>Home</a></li>
+						<li><a>Services</a></li>
+						<li><a>Portfolio</a></li>
+						<li><a>Blogs</a></li>
+						<li><a>Contact Us</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul class=" lg:flex items-center space-x-5 hidden md:block">
+						<li><a><i class="fa-solid fa-magnifying-glass text-[#737373] rounded-full bg-white p-2"></i></a>
+						</li>
+						<li><a><i class="fa-solid fa-cart-shopping text-[#737373]  rounded-full bg-white p-2"></i></a>
+						</li>
+						<li><a class="bg-btn-lime text-black font-extrabold px-5 py-2 rounded-3xl cursor-pointer">Book
+								Consult <i
+									class="fa-solid fa-arrow-right bg-black font-extrabold text-white p-1 ml-1 rounded-full -rotate-45"></i>
+							</a></li>
+					</ul>
+				</div>
+				<div tabindex="0" role="button" class="lg:hidden bg-white rounded-full p-2">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+						stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M4 6h16M4 12h8m-8 6h16" />
+					</svg>
+				</div>
+			</div>
+		</nav>
+		<!-- banner -->
+		<div class="container mx-auto mt-10 flex flex-col text-center justify-center space-y-6">
+			<img class="mx-auto w-1/2 h-1/2" src="./assets/banner.png" alt="">
+			<h1 class="lg:text-6xl text-black font-extrabold">A barn house of this design has a <br> striking appearance
+			</h1>
+			<p class="text-slate-800">The barn house captivates with its blend of rustic charm and modern
+				sophistication,
+				featuring
+				weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+			<button></button>
+		</div>
+	</header>
+	<main>
+
+	</main>
 	<footer></footer>
 </body>
 
